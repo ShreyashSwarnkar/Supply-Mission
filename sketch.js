@@ -63,6 +63,8 @@ function setup() {
 
 
 	Engine.run(engine);
+    
+        Matter.Body.translate(packageBody, {x:-20,y:0})
   
 }
 
@@ -73,8 +75,6 @@ function draw() {
  
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
-
-  Matter.Body.translate(packageBody, {x:0,y:0})
 
   if (keyDown ("left_arrow")) {
       helicopterSprite.x = helicopterSprite.x -20;
