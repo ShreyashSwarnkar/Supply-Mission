@@ -76,13 +76,13 @@ function draw() {
 
   Matter.Body.translate(packageBody, {x:0,y:0})
 
-//   if (keyDown ("left_arrow")) {
-// 	helicopterSprite.x = helicopterSprite.x -20;
-//   }
+  if (keyDown ("left_arrow")) {
+      helicopterSprite.x = helicopterSprite.x -20;
+  }
 
-//   if (keyDown ("right_arrow")) {
-// 	helicopterSprite.x = helicopterSprite.x +20;
-//   }
+  if (keyDown ("right_arrow")) {
+      helicopterSprite.x = helicopterSprite.x +20;
+  }
 
   if (keyDown ("down_arrow")) {
 	Matter.Body.setStatic(packageBody, false);
